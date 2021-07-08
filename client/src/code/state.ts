@@ -60,6 +60,10 @@ export function createState(
             if(currentTileValue <= 0){
                 return;
             }
+            const scores: IScores = {...this.state.scores};
+            let gameState: string = this.state.gameState;
+            let timeSinceLastMatch: number = this.state.timeSinceLastMatch;
+            let selectedTiles: ISelectedTile[] = this.state.selectedTiles.slice(0);
         }
     }
 }
