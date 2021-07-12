@@ -9,13 +9,10 @@ class BaseLayout extends Component {
     render(){
         return(
             <div className="appContainer">
-                <div className="playerBoard">
-                    <PlayerBoard state={this.state} />
-                </div>
-                <div className="controlArea">
-                    <ControlArea state={ this.state } />
-                </div>
+                <div className="playerBoard"> <PlayerBoard state={this.state} />   </div>
+                <div className="controlArea"> <ControlArea state={ this.state } /> </div>
             </div>
         );
     }
 }
+export default BaseLayout;
